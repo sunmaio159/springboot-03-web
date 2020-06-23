@@ -24,7 +24,7 @@ public class EmployeeDao {
         employeeMap.put(105,new Employee(1005,"tian","384093568@qq.com",1,new Department(105,"后勤部"),new Date()));
     }
 
-    public Collection<Employee> getDepartment(){
+    public Collection<Employee> getEmployee(){
         return employeeMap.values();
     }
 
