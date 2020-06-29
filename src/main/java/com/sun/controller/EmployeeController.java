@@ -5,12 +5,14 @@ import com.sun.pojo.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpSession;
 import java.util.Collection;
 
 @Controller
+@CrossOrigin(allowCredentials = "true",allowedHeaders = "*")
 public class EmployeeController {
     @Autowired
     public EmployeeDao employeeDao;
